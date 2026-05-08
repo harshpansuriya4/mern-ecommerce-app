@@ -5,12 +5,14 @@ function Navbar() {
   const { user, logout } = useAuth();
 
   return (
-    <nav className="bg-black text-white px-8 py-4 flex justify-between items-center shadow">
-      <Link to="/" className="text-2xl font-bold">
+    <nav className="bg-black text-white px-4 md:px-8 py-4 flex justify-between items-center shadow">
+
+      <Link to="/" className="text-2xl md:text-3xl font-bold">
         Shop
       </Link>
 
-      <div className="flex gap-4 items-center">
+      <div className="flex gap-3 md:gap-5 items-center text-sm md:text-lg">
+
         <Link to="/cart">Cart</Link>
 
         {user ? (
@@ -21,7 +23,7 @@ function Navbar() {
 
             <button
               onClick={logout}
-              className="bg-red-500 px-3 py-1 rounded"
+              className="bg-red-500 px-3 py-2 rounded text-sm md:text-base"
             >
               Logout
             </button>

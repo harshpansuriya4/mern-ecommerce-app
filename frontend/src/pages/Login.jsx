@@ -42,7 +42,7 @@ function Login() {
   };
 
   return (
-    <div className="max-w-md mx-auto mt-10">
+    <div className="max-w-md mx-auto mt-10 px-4">
       <h2 className="text-3xl font-bold mb-5">
         Login
       </h2>
@@ -55,7 +55,7 @@ function Login() {
           type="email"
           name="email"
           placeholder="Email"
-          className="border p-2"
+          className="border p-3 w-full"
           onChange={handleChange}
         />
 
@@ -63,11 +63,11 @@ function Login() {
           type="password"
           name="password"
           placeholder="Password"
-          className="border p-2"
+          className="border p-3 w-full"
           onChange={handleChange}
         />
 
-        <button className="bg-black text-white p-2">
+        <button className="bg-black text-white p-3 w-full rounded">
           Login
         </button>
       </form>
